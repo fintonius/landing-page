@@ -1,5 +1,11 @@
+.Plum-Rush-1-hex { color: #105057; }
+.Plum-Rush-2-hex { color: #898C8B; }
+.Plum-Rush-3-hex { color: #FF81D0; }
+.Plum-Rush-4-hex { color: #400036; }
+.Plum-Rush-5-hex { color: #919151; }
+
 * {
-	border: dotted red 1px;
+	/* border: dotted red 1px; */
 	box-sizing: inherit;
 }
 
@@ -8,38 +14,73 @@ html {
 }
 
 body {
+	background-color: #e2e2e2;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	font-size: 16px;
 }
 .content {
-	border: green solid 2px;
+	/* border: green solid 2px; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
 	height: 100vh;
-	width: 800px;
+	/* width: 800px; */
 }
 
-.main-title, header, .footer {
+header, .main-title, .image-section, .newsletter, footer {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	width: 800px;
 	padding: 10px;
+	flex: 1 1 auto;
 }
 
 .main-title {
 	justify-content: space-between;
+	background-color: #400036;
 }
 
-.main-text, .main-image {
+.main-image {
+	border: 3px solid #FF81D0;
+	border-radius: 25px;
 	flex: 1;
+}
+.main-text {
+	flex: 1;
+	color: #FF81D0
+}
+
+.image-section {
+	flex-direction: column;
+	background-color: white;
+	border: solid 5px #898C8B;
+	color: #400036;
+}
+
+.image {
+	border: 3px solid #105057;
+	border-radius: 25px;
+}
+
+.newsletter {
+	background-color: #898C8B;
+	color:aliceblue;
+}
+
+.newsletter-text {
+	background-color: #919151;
 }
 
 header {
+	background-color: #400036;
 	justify-content: space-between;
+	flex: 0 1 auto;
 	padding: 10px;
 }
 
@@ -61,4 +102,10 @@ p {
 
 .image, .subtext {
 	min-width: 60px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	color: #FF81D0;
 }
