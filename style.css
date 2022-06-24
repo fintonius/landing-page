@@ -39,6 +39,16 @@ header, .main-title, .image-section, .quote, .newsletter, footer {
 	padding: 10px;
 }
 
+button {
+	background-color: #FF81D0;
+	color: whitesmoke;
+	border-radius: 15px;
+	border: none;
+	padding: 10px;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
 /* HEADER + CONTENTS */
 
 	header {
@@ -46,24 +56,24 @@ header, .main-title, .image-section, .quote, .newsletter, footer {
 		flex: 0;
 		background-color: #2b0325;
 		padding: 10px;
+		
 	}
 
 	.logo {
 		flex: 0;
 		width: 10%;
 		border-radius: 50%;
-		}
+	}
 
-		.buttons {
+	.buttons {
 			display: flex;
-			height: 100%;
-			gap: 10px;
-		}
+			gap: 30px;
+	}
 
-		.link {
-			align-self: stretch;
-			height: 100%;
-		}
+	.link {
+			color: #FF81D0;
+			text-decoration: none;
+	}
 
 /* MAIN SECTION  */
 
@@ -118,29 +128,22 @@ header, .main-title, .image-section, .quote, .newsletter, footer {
 
 	}
 
-	.imageandtext {
+	.image-and-subtext {
 		display: flex;
 		flex-direction: row;
 		width: 100%;
 		justify-content: space-around;
 		flex: 1;
+		gap: 50px;
+		padding: 0px 20px;
 	}
 
-	.test {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		width: 100%;
-		margin: 0px 30px;
-	}
-
-	.subtext, a {
-		flex: 1;
+	.subtext, .image {
 		display: flex;
 		width: 100%;
 	}
 
-	a  {
+	.image  {
 		border: 2px solid #105057;
 		border-radius: 25px;
 	}
@@ -150,7 +153,9 @@ header, .main-title, .image-section, .quote, .newsletter, footer {
 		font-size: 12px;
 		flex: 0;
 		justify-content: center;
+		margin-top: 5px;
 	}
+
 
 /* QUOTE SECTION */
 
@@ -174,18 +179,16 @@ header, .main-title, .image-section, .quote, .newsletter, footer {
 		color: white;
 	}
 
-	.newsletter-content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
 	.newsletter-text {
 		padding: 20px;
 		border: #898C8B solid 1px;
 		border-radius: 10px;
 		background-color: #105057;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
 	}
 
 /* FOOTER */
