@@ -29,7 +29,7 @@ body {
 	height: 100vh;
 }
 
-header, .image-section, .quote, .newsletter, footer {
+header, .image-section, .quote, .newsletter {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -56,7 +56,6 @@ button {
 	header {
 		justify-content: space-between;
 		flex: 0;
-		/* background-color: #2b0325; */
 		padding: 10px;
 		
 	}
@@ -70,7 +69,7 @@ button {
 
 	.site-name {
 		display: flex;
-		justify-content: flex-start;
+		justify-content: space-around;
 		padding-left: 10px;
 		flex: 1;
 		color: #FF81D0;
@@ -110,6 +109,8 @@ button {
 	.main-text {
 		display: flex;
 		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
 		flex: 1;
 		max-width: 800px;
 		height: 100%;
@@ -117,7 +118,7 @@ button {
 	}
 
 	.main-text p {
-		align-self: center;
+		padding-left: 20px;
 	}
 
 
@@ -129,7 +130,6 @@ button {
 		flex-direction: column;
 		align-items: flex-end;
 		justify-content: flex-end;
-		background-color: white;
 		color: #400036;
 	}
 
@@ -155,7 +155,6 @@ button {
 
 	.image-subtext {
 		margin-top: 10px;
-		border: #105057 dotted 2px;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -169,6 +168,14 @@ button {
 		flex: 0;
 		justify-content: center;
 		margin: 5px 5px 2px 5px;
+	}
+
+	.image-subtext .drawing {
+		margin-left: 90px;
+	}
+
+	.image-subtext .projects {
+		margin-left: 90px;
 	}
 
 
@@ -199,7 +206,8 @@ button {
 	.newsletter-content {
 		display: flex;
 		flex: 1;
-		justify-content: space-between;
+		justify-content: space-around;
+		align-items: center;
 		color: #898C8B;
 		font-weight: 900;
 		font-size: large;
@@ -211,5 +219,12 @@ button {
 		flex: 0 0 auto;
 		background-color: #400036;
 		color: #FF81D0;
+		font-size: small;
+		font-style: oblique;
 		width: 100vw;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
 	}
