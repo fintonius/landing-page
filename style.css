@@ -29,7 +29,7 @@ body {
 	height: 100vh;
 }
 
-header, .main-title, .image-section, .quote, .newsletter, footer {
+header, .image-section, .quote, .newsletter, footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -38,6 +38,14 @@ header, .main-title, .image-section, .quote, .newsletter, footer {
 	max-width: 800px;
 	padding: 10px;
 }
+
+.main-title {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+} 
 
 button {
 	background-color: #FF81D0;
@@ -54,7 +62,7 @@ button {
 	header {
 		justify-content: space-between;
 		flex: 0;
-		background-color: #2b0325;
+		/* background-color: #2b0325; */
 		padding: 10px;
 		
 	}
@@ -62,7 +70,18 @@ button {
 	.logo {
 		flex: 0;
 		width: 10%;
+		border: solid 3px #898C8B;
 		border-radius: 50%;
+	}
+
+	.site-name {
+		display: flex;
+		justify-content: flex-start;
+		padding-left: 10px;
+		flex: 1;
+		color: #FF81D0;
+		font-size: 34px;
+		font-weight: bold;
 	}
 
 	.buttons {
@@ -75,14 +94,15 @@ button {
 			text-decoration: none;
 	}
 
-/* MAIN SECTION  */
+/* TOP SECTION  */
 
 	.main-title {
 		flex-wrap: nowrap;
 		justify-content: space-between;
 		gap: 20px;
 		background-color: #400036;
-		flex: 2;
+		flex: 1;
+
 	}
 
 	.main-text, .hero-image {
@@ -99,20 +119,20 @@ button {
 	}
 
 	.hero-image {
-		border: 2px solid #FF81D0;
+		border: 3px solid #FF81D0;
 		border-radius: 25px;	
 	}
 
 	.hero-image img {
 		height: auto;
-		width: 100%;
+		width: 80%;
 		border-radius: 25px;	
 	}
 
 /* IMAGE SECTION */
 
 	.image-section {
-		flex: 2;
+		flex: 3 0 auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -125,7 +145,10 @@ button {
 		flex: 1;
 		display: flex;
 		align-items: center;
-
+		justify-content: center;
+		text-align: center;
+		font-weight: bold;
+		font-size: large;
 	}
 
 	.image-and-subtext {
@@ -138,7 +161,7 @@ button {
 		padding: 0px 20px;
 	}
 
-	.subtext, .image {
+	.subtext, .image, .image1 {
 		display: flex;
 		width: 100%;
 	}
@@ -162,7 +185,7 @@ button {
 	.quote {
 		background-color: #898C8B;
 		color: #105057;
-		flex: 1;
+		flex: 1 0 auto;
 		justify-content: center;
 		align-items: center;
 		font-style: italic;		
@@ -194,7 +217,7 @@ button {
 /* FOOTER */
 
 	footer {
-		flex: 0;
+		flex: 0 0 auto;
 		background-color: #400036;
 		color: #FF81D0;
 		width: 100vw;
